@@ -1036,7 +1036,7 @@ class TestResponse implements ArrayAccess
     }
 
     /**
-     * Validate the decoded response JSON.
+     * Validate and return the decoded response JSON.
      *
      * @return \Illuminate\Testing\AssertableJsonString
      *
@@ -1060,7 +1060,7 @@ class TestResponse implements ArrayAccess
     }
 
     /**
-     * Return the decoded response JSON.
+     * Validate and return the decoded response JSON.
      *
      * @param  string|null  $key
      * @return mixed

@@ -109,29 +109,7 @@ final class Blueprint
                 }
 
                 $path = (string) realpath($object->path);
-
                 $line = $lineFinder($path);
-
-                $file = file($path);
-
-                if (is_array($file)) {
-                    if (array_key_exists($line - 1, $file)) {
-                        $lineContent = $file[$line - 1];
-
-                        if (str_contains($lineContent, '@pest-arch-ignore-line')) {
-                            continue;
-                        }
-                    }
-
-                    if (array_key_exists($line - 2, $file)) {
-                        $lineContent = $file[$line - 2];
-
-                        if (str_contains($lineContent, '@pest-arch-ignore-next-line')) {
-                            continue;
-                        }
-                    }
-                }
-
                 $path = substr($path, strlen(TestSuite::getInstance()->rootPath) + 1);
 
                 $failure(new Violation($path, $line, $line));
@@ -251,7 +229,6 @@ final class Blueprint
         /** @var ObjectDescription $dependOnObject */
         $dependOnObject = array_pop($dependOnObjects);
 
-        /** @var class-string<\PhpParser\Node> $class */
         $class = PhpCoreExpressions::getClass($target) ?? Name::class;
 
         $nodes = ServiceContainer::$nodeFinder->findInstanceOf(

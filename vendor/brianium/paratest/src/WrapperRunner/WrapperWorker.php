@@ -17,7 +17,6 @@ use function clearstatcache;
 use function file_get_contents;
 use function filesize;
 use function implode;
-use function is_array;
 use function is_string;
 use function serialize;
 use function sprintf;
@@ -113,19 +112,12 @@ final class WrapperWorker
                 continue;
             }
 
+            $phpunitArguments[] = "--{$key}";
             if ($value === true) {
-                $phpunitArguments[] = "--{$key}";
                 continue;
             }
 
-            if (! is_array($value)) {
-                $value = [$value];
-            }
-
-            foreach ($value as $innerValue) {
-                $phpunitArguments[] = "--{$key}";
-                $phpunitArguments[] = $innerValue;
-            }
+            $phpunitArguments[] = $value;
         }
 
         $phpunitArguments[] = '--do-not-cache-result';

@@ -129,13 +129,14 @@ final class ResultPrinter
         $output->write("\n");
     }
 
+    /** @param list<SplFileInfo> $teamcityFiles */
     public function printFeedback(
         SplFileInfo $progressFile,
         SplFileInfo $outputFile,
-        SplFileInfo|null $teamcityFile
+        array $teamcityFiles
     ): void {
-        if ($this->options->needsTeamcity && $teamcityFile !== null) {
-            $teamcityProgress = $this->tailMultiple([$teamcityFile]);
+        if ($this->options->needsTeamcity) {
+            $teamcityProgress = $this->tailMultiple($teamcityFiles);
 
             if ($this->teamcityLogFileHandle !== null) {
                 fwrite($this->teamcityLogFileHandle, $teamcityProgress);

@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+}
+
+body {
+    background: url('assets/img/home/bg.avif') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    padding-top: -10px;
+    height: auto;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+    background-color: #333;
+    color: #fff;
+}
+
+.text{
+    padding-left: 55px;
+    padding-bottom: 15px;
+    color: #c5c5c5;
+    font-weight: bolder;
+  }
+  
+  a:hover .text {
+    color: black;
+  }
+
+header .logo h1 {
+    margin: 0;
+    font-size: 38px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+    margin-left: 80%;
+    margin-top: -45px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: -20%;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: black;
+}
+
+.container .logo {
+    width: 150px;
+    margin-bottom: 10px;
+    margin-top: -100px;
+}
+
+h1 {
+    font-size: 4em;
+    color: #d6d5d5;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1em;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+
+button {
+    padding: 10px 20px;
+    letter-spacing: 1.2px;
+    font-size: 1m;
+    font-family: "Figtree", sans-serif;
+    color: #afadad;
+    background-color: #333;
+    border: 2px solid #555;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+    color: #000;
+}
+
+button:active {
+    background-color: #222;
+    color: #ccc;
+}
+
+.welcome-section {
+    padding: 20px;
+}
+
+.welcome-modal .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 1rem);
+    max-width: 100%;
+}
+
+.modal-content {
+    border: none  !important; 
+    border-radius: 20px !important;
+    box-shadow: none !important;
+    opacity: 90%;
+    height: 50%;
+    width: 400px;
+    max-width: 30%;
+}
+
+.modal-footer,.modal-title,.modal-header{
+    border:none !important;
+}
+
+.modal-footer {
+    border-top: none; 
+    justify-content: center;
+    margin-right: 120px;
+}
+
+.modal-body p {
+    text-align: center;
+    font-size: 1.8rem;
+    border:none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
