@@ -24,23 +24,17 @@ use PHPUnit\TestRunner\TestResult\TestResult as PhpUnitTestResult;
 /**
  * @internal
  */
-final readonly class Converter
+final class Converter
 {
-    /**
-     * The prefix for the test suite name.
-     */
     private const PREFIX = 'P\\';
 
-    /**
-     *  The state generator.
-     */
-    private StateGenerator $stateGenerator;
+    private readonly StateGenerator $stateGenerator;
 
     /**
      * Creates a new instance of the Converter.
      */
     public function __construct(
-        private string $rootPath,
+        private readonly string $rootPath,
     ) {
         $this->stateGenerator = new StateGenerator;
     }
@@ -135,7 +129,7 @@ final readonly class Converter
 
         // Format stacktrace as `at <path>`
         $frames = array_map(
-            fn (string $frame): string => "at $frame",
+            fn (string $frame) => "at $frame",
             $frames
         );
 

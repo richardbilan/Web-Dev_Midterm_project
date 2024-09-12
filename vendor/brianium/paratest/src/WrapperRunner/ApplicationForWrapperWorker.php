@@ -12,10 +12,7 @@ use PHPUnit\Logging\JUnit\JunitXmlLogger;
 use PHPUnit\Logging\TeamCity\TeamCityLogger;
 use PHPUnit\Logging\TestDox\TestResultCollector;
 use PHPUnit\Metadata\Api\CodeCoverage as CodeCoverageMetadataApi;
-use PHPUnit\Runner\Baseline\CannotLoadBaselineException;
-use PHPUnit\Runner\Baseline\Reader;
 use PHPUnit\Runner\CodeCoverage;
-use PHPUnit\Runner\ErrorHandler;
 use PHPUnit\Runner\Extension\ExtensionBootstrapper;
 use PHPUnit\Runner\Extension\Facade as ExtensionFacade;
 use PHPUnit\Runner\Extension\PharLoader;
@@ -192,7 +189,7 @@ final class ApplicationForWrapperWorker
             $printer,
             EventFacade::instance(),
             false,
-            99999,
+            120,
             $this->configuration->source(),
         );
 
@@ -204,29 +201,10 @@ final class ApplicationForWrapperWorker
         }
 
         if (isset($this->testdoxFile)) {
-            $this->testdoxResultCollector = new TestResultCollector(
-                EventFacade::instance(),
-                $this->configuration->source(),
-            );
+            $this->testdoxResultCollector = new TestResultCollector(EventFacade::instance());
         }
 
         TestResultFacade::init();
-
-        if ($this->configuration->source()->useBaseline()) {
-            $baselineFile = $this->configuration->source()->baseline();
-            $baseline     = null;
-
-            try {
-                $baseline = (new Reader())->read($baselineFile);
-            } catch (CannotLoadBaselineException $e) {
-                EventFacade::emitter()->testRunnerTriggeredWarning($e->getMessage());
-            }
-
-            if ($baseline !== null) {
-                ErrorHandler::instance()->useBaseline($baseline);
-            }
-        }
-
         EventFacade::instance()->seal();
         EventFacade::emitter()->testRunnerStarted();
 
@@ -253,7 +231,7 @@ final class ApplicationForWrapperWorker
             assert(isset($this->testdoxFile));
             assert(isset($this->testdoxColumns));
 
-            (new TestDoxResultPrinter(DefaultPrinter::from($this->testdoxFile), $this->testdoxColor, $this->testdoxColumns, false))->print(
+            (new TestDoxResultPrinter(DefaultPrinter::from($this->testdoxFile), $this->testdoxColor, $this->testdoxColumns))->print(
                 $this->testdoxResultCollector->testMethodsGroupedByClass(),
             );
         }

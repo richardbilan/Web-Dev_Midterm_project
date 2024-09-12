@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Pest\PendingCalls;
 
 use Closure;
-use Pest\Exceptions\AfterBeforeTestFunction;
 use Pest\PendingCalls\Concerns\Describable;
 use Pest\Support\Backtrace;
 use Pest\Support\ChainableClosure;
@@ -15,8 +14,6 @@ use Pest\TestSuite;
 
 /**
  * @internal
- *
- * @mixin TestCall
  */
 final class BeforeEachCall
 {
@@ -62,22 +59,17 @@ final class BeforeEachCall
         $testCaseProxies = $this->testCaseProxies;
 
         $beforeEachTestCall = function (TestCall $testCall) use ($describing): void {
-
-            if ($this->describing !== null) {
-                if ($describing !== $this->describing) {
-                    return;
-                }
-
-                if ($describing !== $testCall->describing) {
-                    return;
-                }
+            if ($describing !== $this->describing) {
+                return;
             }
-
+            if ($describing !== $testCall->describing) {
+                return;
+            }
             $this->testCallProxies->chain($testCall);
         };
 
         $beforeEachTestCase = ChainableClosure::boundWhen(
-            fn (): bool => is_null($describing) || $this->__describing === $describing,
+            fn (): bool => is_null($describing) || $this->__describing === $describing,  // @phpstan-ignore-line
             ChainableClosure::bound(fn () => $testCaseProxies->chain($this), $this->closure)->bindTo($this, self::class), // @phpstan-ignore-line
         )->bindTo($this, self::class);
 
@@ -92,18 +84,6 @@ final class BeforeEachCall
     }
 
     /**
-     * Runs the given closure after the test.
-     */
-    public function after(Closure $closure): self
-    {
-        if ($this->describing === null) {
-            throw new AfterBeforeTestFunction($this->filename);
-        }
-
-        return $this->__call('after', [$closure]);
-    }
-
-    /**
      * Saves the calls to be used on the target.
      *
      * @param  array<int, mixed>  $arguments
@@ -111,8 +91,7 @@ final class BeforeEachCall
     public function __call(string $name, array $arguments): self
     {
         if (method_exists(TestCall::class, $name)) {
-            $this->testCallProxies
-                ->add(Backtrace::file(), Backtrace::line(), $name, $arguments);
+            $this->testCallProxies->add(Backtrace::file(), Backtrace::line(), $name, $arguments);
 
             return $this;
         }

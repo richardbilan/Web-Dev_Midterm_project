@@ -6,12 +6,11 @@ namespace Pest\Factories;
 
 use ParseError;
 use Pest\Concerns;
+use Pest\Contracts\AddsAnnotations;
 use Pest\Contracts\HasPrintableTestCaseName;
-use Pest\Evaluators\Attributes;
 use Pest\Exceptions\DatasetMissing;
 use Pest\Exceptions\ShouldNotHappen;
 use Pest\Exceptions\TestAlreadyExist;
-use Pest\Exceptions\TestClosureMustNotBeStatic;
 use Pest\Exceptions\TestDescriptionMissing;
 use Pest\Factories\Concerns\HigherOrderable;
 use Pest\Support\Reflection;
@@ -28,11 +27,25 @@ final class TestCaseFactory
     use HigherOrderable;
 
     /**
+     * The list of annotations.
+     *
+     * @var array<int, class-string<AddsAnnotations>>
+     */
+    private const ANNOTATIONS = [
+        Annotations\Depends::class,
+        Annotations\Groups::class,
+        Annotations\CoversNothing::class,
+        Annotations\TestDox::class,
+    ];
+
+    /**
      * The list of attributes.
      *
-     * @var array<int, Attribute>
+     * @var array<int, class-string<\Pest\Factories\Attributes\Attribute>>
      */
-    public array $attributes = [];
+    private const ATTRIBUTES = [
+        Attributes\Covers::class,
+    ];
 
     /**
      * The FQN of the Test Case class.
@@ -133,19 +146,30 @@ final class TestCaseFactory
             $className = 'InvalidTestName'.Str::random();
         }
 
-        $this->attributes = [
-            new Attribute(
-                \PHPUnit\Framework\Attributes\TestDox::class,
-                [$this->filename],
-            ),
-            ...$this->attributes,
-        ];
+        $classAvailableAttributes = array_filter(self::ATTRIBUTES, fn (string $attribute): bool => $attribute::$above);
+        $methodAvailableAttributes = array_filter(self::ATTRIBUTES, fn (string $attribute): bool => ! $attribute::$above);
 
-        $attributesCode = Attributes::code($this->attributes);
+        $classAttributes = [];
+
+        foreach ($classAvailableAttributes as $attribute) {
+            $classAttributes = array_reduce(
+                $methods,
+                fn (array $carry, TestCaseMethodFactory $methodFactory): array => (new $attribute)->__invoke($methodFactory, $carry),
+                $classAttributes
+            );
+        }
 
         $methodsCode = implode('', array_map(
-            fn (TestCaseMethodFactory $methodFactory): string => $methodFactory->buildForEvaluation(),
+            fn (TestCaseMethodFactory $methodFactory): string => $methodFactory->buildForEvaluation(
+                self::ANNOTATIONS,
+                $methodAvailableAttributes
+            ),
             $methods
+        ));
+
+        $classAttributesCode = implode('', array_map(
+            static fn (string $attribute): string => sprintf("\n%s", $attribute),
+            array_unique($classAttributes),
         ));
 
         try {
@@ -155,7 +179,10 @@ final class TestCaseFactory
             use Pest\Repositories\DatasetsRepository as __PestDatasets;
             use Pest\TestSuite as __PestTestSuite;
 
-            $attributesCode
+            /**
+             * @testdox $filename
+             */
+            $classAttributesCode
             #[\AllowDynamicProperties]
             final class $className extends $baseClass implements $hasPrintableTestCaseClassFQN {
                 $traitsCode
@@ -187,14 +214,6 @@ final class TestCaseFactory
 
         if (array_key_exists($method->description, $this->methods)) {
             throw new TestAlreadyExist($method->filename, $method->description);
-        }
-
-        if (
-            $method->closure instanceof \Closure &&
-            (new \ReflectionFunction($method->closure))->isStatic()
-        ) {
-
-            throw new TestClosureMustNotBeStatic($method);
         }
 
         if (! $method->receivesArguments()) {

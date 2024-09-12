@@ -12,9 +12,9 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.2.0",
-        "laravel/framework": "^11.22.0",
-        "pestphp/pest": "^3.0.0"
+        "php": "^8.1.0",
+        "laravel/framework": "^10.48.9|^11.5.0",
+        "pestphp/pest": "^2.34.7"
     },
     "autoload": {
         "psr-4": {
@@ -30,9 +30,9 @@
         }
     },
     "require-dev": {
-        "laravel/dusk": "^8.2.5",
-        "orchestra/testbench": "^9.4.0",
-        "pestphp/pest-dev-tools": "^3.0.0"
+        "laravel/dusk": "^7.13.0",
+        "orchestra/testbench": "^8.22.3|^9.0.4",
+        "pestphp/pest-dev-tools": "^2.16.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

@@ -114,10 +114,6 @@ final class Coverage implements AddsOutput, HandlesArguments
      */
     public function addOutput(int $exitCode): int
     {
-        if (Parallel::isWorker()) {
-            return $exitCode;
-        }
-
         if ($exitCode === 0 && $this->coverage) {
             if (! \Pest\Support\Coverage::isAvailable()) {
                 $this->output->writeln(
@@ -134,7 +130,7 @@ final class Coverage implements AddsOutput, HandlesArguments
                 $this->output->writeln(sprintf(
                     "\n  <fg=white;bg=red;options=bold> FAIL </> Code coverage below expected <fg=white;options=bold> %s %%</>, currently <fg=red;options=bold> %s %%</>.",
                     number_format($this->coverageMin, 1),
-                    number_format(floor($coverage * 10) / 10, 1)
+                    number_format($coverage, 1)
                 ));
             }
 

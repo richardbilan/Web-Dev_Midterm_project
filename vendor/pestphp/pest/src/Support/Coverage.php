@@ -138,7 +138,7 @@ final class Coverage
 
         $totalCoverageAsString = $totalCoverage->asFloat() === 0.0
             ? '0.0'
-            : number_format(floor($totalCoverage->asFloat() * 10) / 10, 1, '.', '');
+            : number_format($totalCoverage->asFloat(), 1, '.', '');
 
         renderUsing($output);
         render(<<<HTML
@@ -197,7 +197,7 @@ final class Coverage
         };
 
         $array = [];
-        foreach (array_filter($file->lineCoverageData(), is_array(...)) as $line => $tests) {
+        foreach (array_filter($file->lineCoverageData(), 'is_array') as $line => $tests) {
             $array = $eachLine($array, $tests, $line);
         }
 
