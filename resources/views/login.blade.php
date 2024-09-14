@@ -9,7 +9,7 @@
   </head>
   <body>
   <div class="container">
-      <form action="{{ route('login') }}" method="POST">
+      <form action="{{ route('about') }}" method="GET">
       @csrf
         <div class="title">Login</div>
         <div class="input-box underline">
@@ -22,7 +22,7 @@
         </div>
         <div class="input-box button">
           <input type="submit" name="" value="Continue" />
-          <a href="{{ url('/about') }}">
+          <a href="{{ url('/about') }}" ></a>
         </div>
       </form>
       <div class="option">or Connect With Social Media</div>
