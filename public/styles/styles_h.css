@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #ff6347; /* Vibrant color for header and footer */
+    background-color: #ff6347;
     color: #ffffff;
     font-family: "Figtree", sans-serif;
     justify-content: space-between;
@@ -23,6 +23,7 @@ header {
     width: 100vw; 
     box-sizing: border-box; 
     margin-top: -10px;
+    margin-left: -8px;
 }
 
  
