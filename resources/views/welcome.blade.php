@@ -3,10 +3,8 @@
 @section('title', 'Web Development')
 
 @section('styles')
-    <!-- External Google Font -->
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Figtree:wght@300;600&amp;display=swap'>
     
-    <!-- Specific styles for welcome page -->
     <link rel="stylesheet" href="{{ asset('styles/styles_h.css') }}">
 @endsection
 
