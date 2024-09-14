@@ -8,7 +8,7 @@
    </head>
 <body>
   <div class="container">
-    <div class="title">Registration</div>
+    <div class="title">Sign Up</div>
     <div class="content">
       <form action="#">
         <div class="user-details">
@@ -58,8 +58,8 @@
           </div>
         </div>
         <div class="button">
-          <input type="submit" value="Register">
-          <a href="{{ url('/welcome') }}">
+          <input type="submit" value="Sign Up">
+          <a href="{{ url('/login') }}"></a>
         </div>
       </form>
     </div>
