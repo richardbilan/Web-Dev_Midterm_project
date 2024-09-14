@@ -10,6 +10,7 @@
   <body>
   <div class="container">
       <form action="{{ route('login') }}" method="POST">
+      @csrf
         <div class="title">Login</div>
         <div class="input-box underline">
           <input type="text" placeholder="Enter Your Email" required />
@@ -21,6 +22,7 @@
         </div>
         <div class="input-box button">
           <input type="submit" name="" value="Continue" />
+          <a href="{{ url('/about') }}">
         </div>
       </form>
       <div class="option">or Connect With Social Media</div>

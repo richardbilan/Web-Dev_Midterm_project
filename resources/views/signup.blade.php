@@ -1,45 +1,69 @@
-<!DOCTYPE html>
+<!-- Designined by CodingLab - youtube.com/codinglabyt -->
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <title>signup</title>
-    <link rel="stylesheet" href="{{ asset('styles/style.css') }}" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <div class="container">
-      <form action="{{ url('/login') }}" method="POST">
-        @csrf
-        <div class="title">Sign Up</div>
-        
-        <div class="input-box underline">
-          <input type="email" name="email" placeholder="Enter Your Email" required />
-          <div class="underline"></div>
+    <meta charset="UTF-8">
+    <title> Sign Up </title>
+    <link rel="stylesheet" href="{{ asset('styles/style_signup.css') }}">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" placeholder="Confirm your password" required>
+          </div>
         </div>
-
-        <div class="input-box">
-          <input type="password" name="password" placeholder="Enter Your Password" required />
-          <div class="underline"></div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
         </div>
-
-        <div class="input-box button">
-          <input type="submit" value="Continue" />
+        <div class="button">
+          <input type="submit" value="Register">
+          <a href="{{ url('/welcome') }}">
         </div>
       </form>
-      
-     
-
-
-      <div class="option">or Connect With Social Media</div>
-
-      <div class="twitter">
-        <a href="#"><i class="fab fa-twitter"></i>Sign in With Twitter</a>
-      </div>
-      
-      <div class="facebook">
-        <a href="#"><i class="fab fa-facebook-f"></i>Sign in With Facebook</a>
-      </div>
     </div>
-  </body>
+  </div>
+
+</body>
 </html>

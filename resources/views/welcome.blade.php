@@ -15,7 +15,7 @@
         <img src="{{ asset('assets/img/home/logo.svg') }}" alt="Laravel Logo" class="logo">
         <h1>Web Development</h1>
         <h2>Group Laravel Project</h2>
-        <a href="{{ url('/about') }}">
+        <a href="{{ url('/login') }}">
             <button>Explore More</button>
         </a>
     </div>
