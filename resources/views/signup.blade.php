@@ -2,37 +2,44 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <title>Responsive Login Form HTML CSS | CodingNepal</title>
+    <title>signup</title>
     <link rel="stylesheet" href="{{ asset('styles/style.css') }}" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-  <div class="container">
-      <form action="{{ route('login') }}" method="POST">
-        <div class="title">Login</div>
+    <div class="container">
+      <form action="{{ url('/login') }}" method="POST">
+        @csrf
+        <div class="title">Sign Up</div>
+        
         <div class="input-box underline">
-          <input type="text" placeholder="Enter Your Email" required />
+          <input type="email" name="email" placeholder="Enter Your Email" required />
           <div class="underline"></div>
         </div>
+
         <div class="input-box">
-          <input type="password" placeholder="Enter Your Password" required />
+          <input type="password" name="password" placeholder="Enter Your Password" required />
           <div class="underline"></div>
         </div>
+
         <div class="input-box button">
-          <input type="submit" name="" value="Continue" />
+          <input type="submit" value="Continue" />
         </div>
       </form>
+      
+     
+
+
       <div class="option">or Connect With Social Media</div>
+
       <div class="twitter">
-        <a href="#"><i class="fab fa-twitter"></i>Sign in With Google</a>
+        <a href="#"><i class="fab fa-twitter"></i>Sign in With Twitter</a>
       </div>
+      
       <div class="facebook">
         <a href="#"><i class="fab fa-facebook-f"></i>Sign in With Facebook</a>
       </div>
-      <div class="signup-link">
-    Don't have an account? <a href="{{ url('/signup') }}">Sign up</a>
-</div>
     </div>
   </body>
 </html>
