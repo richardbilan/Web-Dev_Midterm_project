@@ -11,6 +11,7 @@ body {
     box-sizing: border-box; 
     margin: 0;
     padding: 0;
+    background-color: #292726;
 }
   
 header {
@@ -20,15 +21,11 @@ header {
     padding: 5px;
     background-color: #333;
     color: #e7e6e6;
-    margin-top: -8px;
+    padding: 16px;
     width: 100vw; 
     box-sizing: border-box; 
 }
 
-  
-.list{
-    padding-left: 77%;
-}
     
 a:hover .text {
     color: black;
@@ -44,15 +41,13 @@ nav ul {
     margin: 0%;
     padding: 0%;
     display: flex;
-    gap: 40px;
-    margin-top: 5px;
-    padding-bottom: 5px;
+    gap: 45px;
+    margin-left: 76%;
 }
     
 nav ul li {
     margin: 0;
-    margin-right: 15px;
-    margin-top: 15px;
+    margin-right: 20px;
 }
     
 nav ul li a {
@@ -64,6 +59,7 @@ nav ul li a {
 nav ul li a:hover {
     color: black;
 }
+
   
 
 .section-header {

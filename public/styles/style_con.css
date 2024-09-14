@@ -1,64 +1,61 @@
 body{
-  background: #1c201e;
   overflow: hidden;
-  height: 100%;
+  height: 100hw;
+  background-color: #1a2325;
 }
 
 html {
     height: 100%;
-    background: #1c201e;
     overflow: hidden;
     width: 100vw; 
     box-sizing: border-box; 
   }
   
-  header {
-    font-family: "Figtree", sans-serif;;
-    display: flex;
+header {
+    font-family: "Figtree", sans-serif;
     justify-content: space-between;
     align-items: center;
-    padding: 5px; 
+    padding: 5px;
     background-color: #333;
     color: #e7e6e6;
-    margin-top: -8px;
-  }
+    padding: 15px;
+    width: 100vw; 
+    box-sizing: border-box; 
+}
 
-  .list{
-    padding-left: 77%;
-  }
-  
-  a:hover .text {
+    
+a:hover .text {
     color: black;
-  }
-  
-  .logo h1 {
+}
+    
+.logo h1 {
     margin: 0;
-  }
-  
-  nav ul {
+}
+    
+nav ul {
     margin-left: 100%;
     list-style: none;
     margin: 0%;
     padding: 0%;
     display: flex;
-    gap: 40px;
-  }
-  
-  nav ul li {
+    gap: 45px;
+    margin-left: 76%;
+}
+    
+nav ul li {
     margin: 0;
-    margin-right: 15px;
-    margin-top: 15px;
-  }
-  
-  nav ul li a {
+    margin-right: 20px;
+}
+    
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
-  }
-  
-  nav ul li a:hover {
+}
+    
+nav ul li a:hover {
     color: black;
-  }
+}
 
 svg {
   height: 23rem;

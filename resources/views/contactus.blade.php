@@ -9,6 +9,7 @@
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Pacifico&amp;family=Quicksand&amp;display=swap'>
 	<link rel="stylesheet" href="{{ url('styles/style_con.css') }}">
 	@endsection
+
 @section('content')
 
 <div class="container d-flex justify-content-center align-items-center">
