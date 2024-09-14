@@ -15,9 +15,10 @@
         <img src="assets/img/home/logo.svg" alt="Laravel Logo" class="logo">
         <h1 style="font-weight: 900;">Web Development</h1>
         <h3 style="font-weight: 100;">Group Laravel Project</h3>
-        <a href="{{ url('/about') }}">
-            <button>Explore More</button>
-        </a>
+        <a href="{{ url('/login') }}">
+    <button>Explore More</button>
+</a>
+
     </div>
 
     <section class="welcome-section">
