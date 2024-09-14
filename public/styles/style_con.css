@@ -1,23 +1,23 @@
+html {
+  height: 100%;
+  overflow: hidden;
+  width: 100vw; 
+  box-sizing: border-box; 
+}
+
 body{
   overflow: hidden;
   height: 100hw;
-  background-color: #1a2325;
+  background-color: #2c2c2c;
 }
-
-html {
-    height: 100%;
-    overflow: hidden;
-    width: 100vw; 
-    box-sizing: border-box; 
-  }
   
 header {
     font-family: "Figtree", sans-serif;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    background-color: #333;
-    color: #e7e6e6;
+    background-color: #ff6347;
+    color: #ffffff;
     padding: 15px;
     width: 100vw; 
     box-sizing: border-box; 
@@ -126,7 +126,7 @@ form {
 }
 form .title {
   font-family: "Pacifico", cursive;
-  color: #4d5a69;
+  color: #cce3fd;
   font-size: 2.5rem;
   margin-left: -10px;
 }

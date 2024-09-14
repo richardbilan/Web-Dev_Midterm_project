@@ -11,7 +11,7 @@
 @section('content') 
 
     <div class="section-header">
-        <h2 class="header header_home" style="text-decoration: underline">About Us</h2>
+        <h2 class="header header_home">About Us</h2>
     </div>
 
     <div class="container">
