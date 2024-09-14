@@ -9,11 +9,7 @@
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Pacifico&amp;family=Quicksand&amp;display=swap'>
 	<link rel="stylesheet" href="{{ url('styles/style_con.css') }}">
 	@endsection
-
 @section('content')
-
-
-
 
 <div class="container d-flex justify-content-center align-items-center">
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 563" fill="none" class="svg">
