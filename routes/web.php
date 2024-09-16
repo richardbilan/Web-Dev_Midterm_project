@@ -24,12 +24,3 @@ Route::get('/user/{name?}', function ($name = null) {
 
     return redirect()->route('welcome');
 });
-// Display the login form
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
-
-// Display the signup form
-Route::get('/signup', function () {
-    return view('signup'); 
-})->name('signup');
