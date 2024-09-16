@@ -1,27 +1,35 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-})->name('welcome'); // Name the route
+})->name('welcome'); 
 
 Route::get('/contactus', function () {
     return view('contactus');
-})->name('contact'); // Name the route
+})->name('contact'); 
 
 Route::get('/about', function () {
     return view('about');
-})->name('about'); // Name the route
+})->name('about'); 
 
 Route::get('/user/{name?}', function ($name = null) {
     $userName = preg_replace('/[^a-zA-Z]/', '', $name);
-
     $userName = $userName ?: 'Guest';
-
     $userName = ucfirst(strtolower($userName));
-
     session()->flash('user_name', $userName);
 
-    return redirect()->route('welcome'); // Redirect to named route
+    return redirect()->route('welcome');
 });
+// Display the login form
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+
+// Display the signup form
+Route::get('/signup', function () {
+    return view('signup'); 
+})->name('signup');

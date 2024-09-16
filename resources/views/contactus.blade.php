@@ -1,25 +1,16 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Contact Us</title>
+@extends('Components.Layout')
+
+@section('title', 'Contact Us')
+
+@section('styles')
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Figtree:wght@300;600&amp;display=swap'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Pacifico&amp;family=Quicksand&amp;display=swap'>
 	<link rel="stylesheet" href="{{ url('styles/style_con.css') }}">
-</head>
-<body>
+	@endsection
 
-<header>
-    <nav class="list">
-        <ul>
-		<li><a href="{{ url('/')}}" style="text-decoration: none;">Home</a></li>
-                <li><a href="{{ url('/about')}}"style="text-decoration: none;">About</a></li>
-                <li><a href="{{ url('/contactus')}}"style="text-decoration: none;">Contact Us</a></li>
-        </ul>
-    </nav>
-</header>
+@section('content')
 
 <div class="container d-flex justify-content-center align-items-center">
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 563" fill="none" class="svg">
@@ -347,11 +338,4 @@
 	</form>
 	
 </div>
-
-<script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
-<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
-<script src='https://unpkg.com/feather-icons'></script><script src="{{ asset('js/script.js') }}"></script>
-
-</body>
-</html>
+@endsection

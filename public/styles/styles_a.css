@@ -11,24 +11,20 @@ body {
     box-sizing: border-box; 
     margin: 0;
     padding: 0;
+    background-color: #2c2c2c;
 }
   
 header {
     font-family: "Figtree", sans-serif;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
-    background-color: #333;
-    color: #e7e6e6;
-    margin-top: -8px;
+    background-color: #ff6347;
+    color: #ffffff;
+    padding: 16px;
     width: 100vw; 
     box-sizing: border-box; 
 }
 
-  
-.list{
-    padding-left: 77%;
-}
     
 a:hover .text {
     color: black;
@@ -44,15 +40,13 @@ nav ul {
     margin: 0%;
     padding: 0%;
     display: flex;
-    gap: 40px;
-    margin-top: 5px;
-    padding-bottom: 5px;
+    gap: 45px;
+    margin-left: 75%;
 }
     
 nav ul li {
     margin: 0;
-    margin-right: 15px;
-    margin-top: 15px;
+    margin-right: 20px;
 }
     
 nav ul li a {
@@ -64,7 +58,6 @@ nav ul li a {
 nav ul li a:hover {
     color: black;
 }
-  
 
 .section-header {
     text-align: center;
@@ -76,7 +69,9 @@ nav ul li a:hover {
     font-family: "Bebas Neue", sans-serif;
     font-size: 45px;
     margin: 0;
+    margin-top: -30px;
     text-align: center;
+    text-decoration: underline;
 }
 
 .section-header p {
@@ -115,7 +110,7 @@ nav ul li a:hover {
     align-items: left;
     min-height: 300px;
     height: auto;
-    background-image: linear-gradient(45deg, #121336, #31312b);
+    background-image: linear-gradient(45deg, #ff3300, #e7e7e7);
     background-size: 200% 100%;
     animation: shine 1.5s infinite;
 }
@@ -185,7 +180,7 @@ nav ul li a:hover {
 .box:before {
     top: 0;
     left: 0;
-    border-top-left-radius: 10px;
+    border-top-left-radius: 5px;
 }
 
 .box:after {
@@ -194,34 +189,12 @@ nav ul li a:hover {
     border-bottom-right-radius: 10px;
 }
 
-.box:hover:before,
-.box:hover:after {
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    transition-delay: .3s;
-}
-
 .box:hover {
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 20px rgba(218, 23, 23, 0.2);
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.5) 100%);
     box-shadow: 0 2px 15px 5px rgba(0, 0, 0, 0.5);
 }
 
-.box span {
-    position: absolute;
-    top: 0;
-    left: -110%;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.3);
-    transition: .5s;
-    transform: skewX(10deg);
-}
-
-.box:hover span {
-    left: 110%;
-}
 
 @media (max-width: 1000px) {
     .box {
@@ -251,3 +224,4 @@ nav ul li a:hover {
         text-align: center;
     }
 }
+
