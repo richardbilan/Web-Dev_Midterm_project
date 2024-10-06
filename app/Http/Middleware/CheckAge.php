@@ -1,7 +1,5 @@
 <?php
 
-// app/Http/Middleware/CheckAge.php
-
 namespace App\Http\Middleware;
 
 use Closure;
@@ -13,6 +11,8 @@ class CheckAge
     {
         if ($request->age < 18) {
             return redirect('access-denied');
+        } elseif ($request->age >= 21) {
+            return redirect('restricted-dashboard');
         }
 
         return $next($request);
