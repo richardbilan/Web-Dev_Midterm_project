@@ -19,11 +19,11 @@ Route::middleware([LogRequests::class])->group(function () {
     })->name('about');
 
     Route::get('/restricted-dashboard', function () {
-        return "Access Restricted GURANG KANA! DAE KANA MAG KASTA!";
+        return "Access Restricted!";
     });
 
     Route::get('/access-denied', function () {
-        return "Access Denied PATAL MINOR KA!";
+        return "Access Denied!";
     });
 });
 
