@@ -18,14 +18,14 @@ class LogRequests
     public function terminate(Request $request, $response)
     {
         $logData = sprintf(
-            "[%s] %s: %s, Age: %s\n",
+            "[%s] %s: %s\n",
             Carbon::now()->format('Y-m-d H:i:s'),
             $request->method(),
-            $request->fullUrl(),
-            $request->query('age', 'N/A')
+            $request->fullUrl()
         );
 
         file_put_contents(storage_path('logs/log.txt'), $logData, FILE_APPEND);
     }
 }
+
 
