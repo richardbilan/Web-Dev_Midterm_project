@@ -1,15 +1,14 @@
 <?php
 
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 use App\Http\Middleware\CheckAge;
 use App\Http\Middleware\LogRequests;
 
 Route::middleware([LogRequests::class])->group(function () {
-    Route::get('/', function (Request $request) {
+    Route::get('/', function () {
         return view('welcome');
-    })->name('welcome');
+    })->name('home');
 
     Route::get('/contactus', function () {
         return view('contactus');
@@ -28,9 +27,9 @@ Route::middleware([LogRequests::class])->group(function () {
     });
 });
 
-// Apply CheckAge middleware specifically to these routes
-Route::middleware([CheckAge::class])->group(function () {
-    Route::get('/welcome', function (Request $request) {
+// Apply CheckAge middleware with a minimum age parameter
+Route::middleware([CheckAge::class.':18'])->group(function () {
+    Route::get('/welcome', function () {
         return view('welcome');
     })->name('welcome');
 

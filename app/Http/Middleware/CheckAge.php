@@ -9,9 +9,9 @@ use Illuminate\Http\Request;
 
 class CheckAge
 {
-    public function handle(Request $request, Closure $next)
+    public function handle(Request $request, Closure $next, $minAge)
     {
-        if ($request->age < 18) {
+        if ($request->age < $minAge) {
             return redirect('access-denied');
         } elseif ($request->age >= 21) {
             return redirect('restricted-dashboard');
