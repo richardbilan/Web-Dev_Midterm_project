@@ -389,3 +389,8 @@
 [2024-10-18 17:19:38] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
 [2024-10-18 17:20:10] GET: http://127.0.0.1:8000/about
 [2024-10-18 17:20:15] GET: http://127.0.0.1:8000/contactus
+[2024-10-18 21:15:09] GET: http://127.0.0.1:8000/welcome?guest=true, Age: N/A
+[2024-10-18 21:15:09] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 21:15:14] GET: http://127.0.0.1:8000/welcome?age=-1&username=Kiezer, Age: -1
+[2024-10-18 21:15:14] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 21:15:19] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
