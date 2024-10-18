@@ -99,3 +99,293 @@
 [2024-10-07 10:42:40] GET: http://127.0.0.1:8000/access-denied
 [2024-10-07 10:42:51] GET: http://127.0.0.1:8000/welcome?age=15, Age: 15
 [2024-10-07 10:42:51] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 02:27:27] GET: http://127.0.0.1:8000
+[2024-10-18 02:28:07] GET: http://127.0.0.1:8000
+[2024-10-18 02:28:18] GET: http://127.0.0.1:8000/about
+[2024-10-18 02:28:21] GET: http://127.0.0.1:8000/contactus
+[2024-10-18 02:28:59] GET: http://127.0.0.1:8000
+[2024-10-18 02:29:19] GET: http://127.0.0.1:8000
+[2024-10-18 02:30:44] GET: http://127.0.0.1:8000
+[2024-10-18 02:31:22] GET: http://127.0.0.1:8000
+[2024-10-18 02:31:26] GET: http://127.0.0.1:8000/about
+[2024-10-18 02:31:43] GET: http://127.0.0.1:8000/about
+[2024-10-18 02:31:59] GET: http://127.0.0.1:8000
+[2024-10-18 02:33:56] GET: http://127.0.0.1:8000
+[2024-10-18 02:36:47] GET: http://127.0.0.1:8000
+[2024-10-18 02:36:48] GET: http://127.0.0.1:8000
+[2024-10-18 02:36:55] GET: http://127.0.0.1:8000
+[2024-10-18 02:38:08] GET: http://127.0.0.1:8000
+[2024-10-18 02:38:40] GET: http://127.0.0.1:8000
+[2024-10-18 02:38:57] GET: http://127.0.0.1:8000
+[2024-10-18 02:39:00] GET: http://127.0.0.1:8000
+[2024-10-18 02:39:12] GET: http://127.0.0.1:8000
+[2024-10-18 02:39:20] GET: http://127.0.0.1:8000
+[2024-10-18 02:41:37] GET: http://127.0.0.1:8000
+[2024-10-18 02:42:00] GET: http://127.0.0.1:8000
+[2024-10-18 02:42:51] GET: http://127.0.0.1:8000
+[2024-10-18 02:44:06] GET: http://127.0.0.1:8000
+[2024-10-18 02:45:00] GET: http://127.0.0.1:8000
+[2024-10-18 02:45:20] GET: http://127.0.0.1:8000
+[2024-10-18 02:45:52] GET: http://127.0.0.1:8000
+[2024-10-18 02:46:10] GET: http://127.0.0.1:8000
+[2024-10-18 02:46:38] GET: http://127.0.0.1:8000
+[2024-10-18 02:47:01] GET: http://127.0.0.1:8000
+[2024-10-18 02:47:10] GET: http://127.0.0.1:8000
+[2024-10-18 02:48:02] GET: http://127.0.0.1:8000
+[2024-10-18 02:50:36] GET: http://127.0.0.1:8000
+[2024-10-18 03:24:17] GET: http://127.0.0.1:8000
+[2024-10-18 07:51:55] GET: http://127.0.0.1:8000
+[2024-10-18 07:55:36] GET: http://127.0.0.1:8000
+[2024-10-18 07:59:15] GET: http://127.0.0.1:8000
+[2024-10-18 08:05:07] GET: http://127.0.0.1:8000
+[2024-10-18 08:05:08] GET: http://127.0.0.1:8000
+[2024-10-18 08:05:09] GET: http://127.0.0.1:8000
+[2024-10-18 08:05:34] GET: http://127.0.0.1:8000
+[2024-10-18 08:06:00] GET: http://127.0.0.1:8000
+[2024-10-18 08:06:41] GET: http://127.0.0.1:8000
+[2024-10-18 08:06:43] GET: http://127.0.0.1:8000
+[2024-10-18 08:07:14] GET: http://127.0.0.1:8000
+[2024-10-18 08:07:17] GET: http://127.0.0.1:8000
+[2024-10-18 08:07:25] GET: http://127.0.0.1:8000
+[2024-10-18 08:10:25] GET: http://127.0.0.1:8000
+[2024-10-18 08:12:16] GET: http://127.0.0.1:8000
+[2024-10-18 08:12:41] GET: http://127.0.0.1:8000
+[2024-10-18 08:12:41] GET: http://127.0.0.1:8000
+[2024-10-18 08:12:52] GET: http://127.0.0.1:8000
+[2024-10-18 08:13:38] GET: http://127.0.0.1:8000
+[2024-10-18 08:14:24] GET: http://127.0.0.1:8000
+[2024-10-18 08:16:59] GET: http://127.0.0.1:8000
+[2024-10-18 08:19:40] GET: http://127.0.0.1:8000
+[2024-10-18 08:19:47] GET: http://127.0.0.1:8000
+[2024-10-18 08:19:51] GET: http://127.0.0.1:8000
+[2024-10-18 08:19:54] GET: http://127.0.0.1:8000
+[2024-10-18 08:19:58] GET: http://127.0.0.1:8000
+[2024-10-18 08:22:19] GET: http://127.0.0.1:8000
+[2024-10-18 08:25:44] GET: http://127.0.0.1:8000
+[2024-10-18 08:28:24] GET: http://127.0.0.1:8000
+[2024-10-18 08:28:34] GET: http://127.0.0.1:8000
+[2024-10-18 08:30:07] GET: http://127.0.0.1:8000
+[2024-10-18 08:32:09] GET: http://127.0.0.1:8000
+[2024-10-18 08:36:12] GET: http://127.0.0.1:8000
+[2024-10-18 08:36:58] GET: http://127.0.0.1:8000
+[2024-10-18 08:37:34] GET: http://127.0.0.1:8000
+[2024-10-18 08:38:15] GET: http://127.0.0.1:8000
+[2024-10-18 08:41:23] GET: http://127.0.0.1:8000/about
+[2024-10-18 08:41:41] GET: http://127.0.0.1:8000/about
+[2024-10-18 08:43:01] GET: http://127.0.0.1:8000/about
+[2024-10-18 08:52:42] GET: http://127.0.0.1:8000/about
+[2024-10-18 08:52:45] GET: http://127.0.0.1:8000
+[2024-10-18 09:03:27] GET: http://127.0.0.1:8000
+[2024-10-18 09:04:02] GET: http://127.0.0.1:8000
+[2024-10-18 09:05:57] GET: http://127.0.0.1:8000
+[2024-10-18 09:06:15] GET: http://127.0.0.1:8000
+[2024-10-18 09:07:18] GET: http://127.0.0.1:8000
+[2024-10-18 09:08:23] GET: http://127.0.0.1:8000
+[2024-10-18 09:09:28] GET: http://127.0.0.1:8000
+[2024-10-18 09:09:42] GET: http://127.0.0.1:8000
+[2024-10-18 09:10:23] GET: http://127.0.0.1:8000
+[2024-10-18 09:14:53] GET: http://127.0.0.1:8000
+[2024-10-18 09:15:12] GET: http://127.0.0.1:8000
+[2024-10-18 09:27:13] GET: http://127.0.0.1:8000
+[2024-10-18 09:35:34] GET: http://127.0.0.1:8000
+[2024-10-18 09:47:54] GET: http://127.0.0.1:8000
+[2024-10-18 09:50:06] GET: http://127.0.0.1:8000
+[2024-10-18 10:00:22] GET: http://127.0.0.1:8000
+[2024-10-18 12:47:07] GET: http://127.0.0.1:8000
+[2024-10-18 12:50:46] GET: http://127.0.0.1:8000
+[2024-10-18 12:50:47] GET: http://127.0.0.1:8000
+[2024-10-18 13:02:25] GET: http://127.0.0.1:8000
+[2024-10-18 13:02:27] GET: http://127.0.0.1:8000
+[2024-10-18 13:16:27] GET: http://127.0.0.1:8000/welcome?age=22&username=Kiezer, Age: 22
+[2024-10-18 13:17:33] GET: http://127.0.0.1:8000/welcome?age=22&username=Kiezer, Age: 22
+[2024-10-18 13:18:05] GET: http://127.0.0.1:8000/welcome?age=22&username=Kiezer, Age: 22
+[2024-10-18 13:19:11] GET: http://127.0.0.1:8000/welcome?age=11&username=Kiezer, Age: 11
+[2024-10-18 13:19:11] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 13:19:13] GET: http://127.0.0.1:8000/welcome?guest=true, Age: N/A
+[2024-10-18 13:19:13] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 13:19:19] GET: http://127.0.0.1:8000/welcome?age=22&username=Kiezer, Age: 22
+[2024-10-18 13:26:36] GET: http://127.0.0.1:8000/welcome?age=22&username=Kiezer, Age: 22
+[2024-10-18 13:27:01] GET: http://127.0.0.1:8000/welcome?age=22&username=Kiezer, Age: 22
+[2024-10-18 13:31:30] GET: http://127.0.0.1:8000/welcome?age=1&username=Kiezer, Age: 1
+[2024-10-18 13:31:30] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 13:31:33] GET: http://127.0.0.1:8000/welcome?age=12&username=Kiezer, Age: 12
+[2024-10-18 13:31:33] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 13:31:38] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:31:53] GET: http://127.0.0.1:8000/welcome?guest=true, Age: N/A
+[2024-10-18 13:31:54] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 13:32:01] GET: http://127.0.0.1:8000/welcome?age=12&username=Kiezer, Age: 12
+[2024-10-18 13:32:02] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 13:32:14] GET: http://127.0.0.1:8000/welcome?age=21&username=Kiezer, Age: 21
+[2024-10-18 13:32:14] GET: http://127.0.0.1:8000/restricted-dashboard
+[2024-10-18 13:32:21] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:33:17] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:33:17] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:33:18] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:33:45] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:33:46] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:33:46] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:33:57] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:33:59] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:34:08] GET: http://127.0.0.1:8000/welcome?age=20&username=Kiezer, Age: 20
+[2024-10-18 13:35:16] GET: http://127.0.0.1:8000/welcome?age=20&username=Kiezer, Age: 20
+[2024-10-18 13:36:35] GET: http://127.0.0.1:8000/welcome?age=20&username=Kiezer, Age: 20
+[2024-10-18 13:36:41] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:37:20] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:37:42] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:38:05] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:38:22] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:38:26] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:38:30] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:39:52] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:40:17] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:40:25] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:40:32] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:40:38] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:40:41] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:40:51] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:41:06] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:41:38] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:42:10] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:42:12] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:42:17] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:43:16] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:44:01] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:44:08] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:44:19] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:44:26] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:44:33] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:45:00] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:45:30] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:45:45] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:46:02] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:46:23] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:46:30] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:46:37] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:46:45] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:47:33] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:47:47] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:48:11] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:48:18] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:48:24] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:48:30] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:48:55] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:49:51] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 13:51:12] GET: http://127.0.0.1:8000/welcome?guest=true, Age: N/A
+[2024-10-18 13:51:12] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 13:51:17] GET: http://127.0.0.1:8000/welcome?age=12&username=Kiezer, Age: 12
+[2024-10-18 13:51:17] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 13:51:22] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:52:07] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:52:23] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:52:49] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:53:16] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 13:59:18] GET: http://127.0.0.1:8000/about
+[2024-10-18 14:00:41] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:03:27] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:03:42] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:04:26] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:04:34] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:05:02] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:05:17] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:05:25] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:05:27] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:05:37] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:05:40] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:05:44] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:06:13] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:06:25] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:06:36] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:06:52] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:07:01] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:07:05] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:07:16] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:07:20] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:07:38] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:07:53] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:08:01] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:08:11] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:08:20] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:08:46] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:08:50] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:08:56] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:09:03] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:09:29] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:09:35] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:09:46] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:09:55] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:12:33] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:12:43] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:12:52] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:13:11] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:14:31] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:16:24] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:18:50] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:22:02] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:34:06] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:35:15] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:55:49] GET: http://127.0.0.1:8000/welcome?age=1&username=Kiezer, Age: 1
+[2024-10-18 14:55:50] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 14:55:55] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 14:56:01] GET: http://127.0.0.1:8000/welcome?age=21&username=Kiezer, Age: 21
+[2024-10-18 14:56:01] GET: http://127.0.0.1:8000/restricted-dashboard
+[2024-10-18 14:56:05] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 14:56:43] GET: http://127.0.0.1:8000/about
+[2024-10-18 14:59:31] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 15:01:20] GET: http://127.0.0.1:8000/welcome?age=1&username=Kiezer, Age: 1
+[2024-10-18 15:01:20] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 15:01:28] GET: http://127.0.0.1:8000/welcome?age=21&username=Kiezer, Age: 21
+[2024-10-18 15:01:28] GET: http://127.0.0.1:8000/restricted-dashboard
+[2024-10-18 15:01:40] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 15:03:39] GET: http://127.0.0.1:8000/about
+[2024-10-18 15:03:43] GET: http://127.0.0.1:8000/contactus
+[2024-10-18 15:03:47] GET: http://127.0.0.1:8000/about
+[2024-10-18 15:05:51] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 15:14:51] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 16:07:33] GET: http://127.0.0.1:8000/about
+[2024-10-18 16:09:35] GET: http://127.0.0.1:8000/contactus
+[2024-10-18 16:27:57] GET: http://127.0.0.1:8000/about
+[2024-10-18 16:28:11] GET: http://127.0.0.1:8000/welcome?age=19&username=Kiezer, Age: 19
+[2024-10-18 16:58:49] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:00:32] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:01:52] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:02:17] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:05:33] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:06:15] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:06:30] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:08:06] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:08:22] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:08:33] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:08:45] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:09:00] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:09:10] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:09:17] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:09:28] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:09:33] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:09:54] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:09:59] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:10:25] GET: http://127.0.0.1:8000/contactus
+[2024-10-18 17:10:27] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:13:06] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:13:39] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:14:10] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:14:20] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:14:22] GET: http://127.0.0.1:8000/contactus
+[2024-10-18 17:15:27] GET: http://127.0.0.1:8000/welcome?guest=true, Age: N/A
+[2024-10-18 17:15:27] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 17:16:51] GET: http://127.0.0.1:8000/welcome?guest=true, Age: N/A
+[2024-10-18 17:16:51] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 17:16:53] GET: http://127.0.0.1:8000/welcome?guest=true, Age: N/A
+[2024-10-18 17:16:54] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 17:18:26] GET: http://127.0.0.1:8000/welcome?guest=true, Age: N/A
+[2024-10-18 17:18:26] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 17:18:30] GET: http://127.0.0.1:8000/welcome?guest=true, Age: N/A
+[2024-10-18 17:18:30] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 17:19:09] GET: http://127.0.0.1:8000/welcome?guest=true, Age: N/A
+[2024-10-18 17:19:09] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 17:19:22] GET: http://127.0.0.1:8000/welcome?age=1&username=Kiezer, Age: 1
+[2024-10-18 17:19:22] GET: http://127.0.0.1:8000/access-denied
+[2024-10-18 17:19:28] GET: http://127.0.0.1:8000/welcome?age=21&username=Kiezer, Age: 21
+[2024-10-18 17:19:28] GET: http://127.0.0.1:8000/restricted-dashboard
+[2024-10-18 17:19:38] GET: http://127.0.0.1:8000/welcome?age=18&username=Kiezer, Age: 18
+[2024-10-18 17:20:10] GET: http://127.0.0.1:8000/about
+[2024-10-18 17:20:15] GET: http://127.0.0.1:8000/contactus

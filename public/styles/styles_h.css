@@ -6,11 +6,12 @@ html {
 }
 
 body {
-    
-    height: auto;
-    overflow: hidden;
-    background-color: #2c2c2c; 
-    color: #ffffff; 
+    height: 100vh;
+    /* Change to 100vh to utilize full viewport height */
+    overflow-y: auto;
+    /* Allow vertical scrolling */
+    background: linear-gradient(135deg, #545353, #696969);
+    color: #ffffff;
 }
 
 header {
@@ -20,21 +21,20 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    width: 100vw; 
-    box-sizing: border-box; 
+    width: 100vw;
+    box-sizing: border-box;
     margin-top: -10px;
     margin-left: -8px;
 }
 
- 
 a:hover .text {
     color: black;
 }
-    
+
 .logo h1 {
     margin: 0;
 }
-    
+
 nav ul {
     margin-left: 100%;
     list-style: none;
@@ -44,20 +44,20 @@ nav ul {
     gap: 45px;
     margin-left: 75%;
 }
-    
+
 nav ul li {
     margin: 0;
     margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 5px;
 }
-    
+
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
 }
-    
+
 nav ul li a:hover {
     color: black;
 }
@@ -91,10 +91,11 @@ h2 {
     margin-bottom: 20px;
 }
 
-
 button {
-    background-color: #fa6732; /* Bright button color */
-    color: #ffffff; /* White text */
+    background-color: #fa6732;
+    /* Bright button color */
+    color: #ffffff;
+    /* White text */
     border: none;
     letter-spacing: 1px;
     padding: 10px 20px;
@@ -104,8 +105,9 @@ button {
 }
 
 button:hover {
-    background-color: #ff2600; /* Slightly different shade on hover */
-    transform: scale(1.05); 
+    background-color: #ff2600;
+    /* Slightly different shade on hover */
+    transform: scale(1.05);
 }
 
 button:active {
@@ -117,40 +119,323 @@ button:active {
     padding: 20px;
 }
 
-.welcome-modal .modal-dialog {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 1rem);
-    max-width: 100%;
+
+/* From Uiverse.io by Spacious74 */
+
+.outer {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    padding: 1px;
+    background: radial-gradient(circle 230px at 0% 0%, #ffffff, #0c0d0d);
+    position: relative;
+    margin: 15px;
+    /* Adjust this value for desired spacing */
 }
+
+.dot {
+    width: 5px;
+    aspect-ratio: 1;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px #ffffff;
+    border-radius: 100px;
+    z-index: 2;
+    right: 10%;
+    top: 10%;
+    animation: moveDot 6s linear infinite;
+}
+
+@keyframes moveDot {
+    0%,
+    100% {
+        top: 10%;
+        right: 10%;
+    }
+    25% {
+        top: 10%;
+        right: calc(100% - 35px);
+    }
+    50% {
+        top: calc(100% - 30px);
+        right: calc(100% - 35px);
+    }
+    75% {
+        top: calc(100% - 30px);
+        right: 10%;
+    }
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    border: solid 1px #202222;
+    background-size: 20px 20px;
+    background: radial-gradient(circle 280px at 0% 0%, #444444, #0c0d0d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    color: #fff;
+    margin: 10px;
+}
+
+.ray {
+    width: 220px;
+    height: 45px;
+    border-radius: 100px;
+    position: absolute;
+    background-color: #c7c7c7;
+    opacity: 0.4;
+    box-shadow: 0 0 50px #fff;
+    filter: blur(10px);
+    transform-origin: 10%;
+    top: 0%;
+    left: 0;
+    transform: rotate(40deg);
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    border: solid 1px #202222;
+    background-size: 20px 20px;
+    background: radial-gradient(circle 280px at 0% 0%, #444444, #0c0d0d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    color: #fff;
+    margin: 10px;
+    /* Add this line to create space between cards */
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #2c2c2c;
+}
+
+.topl {
+    top: 10%;
+    background: linear-gradient(90deg, #888888 30%, #1d1f1f 70%);
+}
+
+.bottoml {
+    bottom: 10%;
+}
+
+.leftl {
+    left: 10%;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, #747474 30%, #222424 70%);
+}
+
+.rightl {
+    right: 10%;
+    width: 1px;
+    height: 100%;
+}
+
+
+/* Hero Section Styles */
+
+.hero-section {
+    background: linear-gradient(135deg, #545353, #696969);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    color: #fff;
+    overflow: hidden;
+}
+
+.profile-image {
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+}
+
+.text-light {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+h6 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.intro-text {
+    font-size: 1.2em;
+    line-height: 1.7;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #dcdcdc;
+}
+
+
+/* Responsive Adjustments */
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h6 {
+        font-size: 1.2em;
+    }
+    .profile-image {
+        width: 100%;
+        height: auto;
+    }
+    .intro-text {
+        font-size: 1em;
+    }
+}
+
+
+/* Modal base styles */
+
+
+/* Modal base styles */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000;
+    /* Sit on top */
+    left: 0;
+    /* Align to the left */
+    top: 0;
+    /* Align to the top */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black with opacity for the overlay effect */
+}
+
+
+/* Modal Content Box */
 
 .modal-content {
-    border: none  !important; 
-    border-radius: 20px !important;
-    box-shadow: none !important;
-    opacity: 90%;
-    height: 50%;
-    width: 400px;
-    max-width: 30%;
+    position: absolute;
+    /* Use absolute positioning */
+    top: 30%;
+    /* Adjust this for vertical positioning */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Center the modal */
+    background-color: #fefefe;
+    /* Background color of the modal */
+    height: 70%;
+    padding: 40px;
+    /* Padding for content */
+    border: 1px solid #888;
+    /* Border color */
+    width: 80%;
+    /* Set modal width */
+    max-width: 600px;
+    /* Maximum width of the modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Shadow for depth */
+    animation: animateModal 0.3s ease;
+    /* Optional animation */
+    border-radius: 10px;
+    /* Rounded corners */
 }
 
-.modal-footer,.modal-title,.modal-header{
-    border:none !important;
-}
 
-.modal-footer {
-    border-top: none; 
-    justify-content: center;
-    margin-right: 120px;
-}
+/* Close Button */
 
-.modal-body p {
-    text-align: center;
-    font-size: 1.8rem;
-    border:none;
+.close {
+    color: #aaa;
+    /* Color of the close button */
+    float: right;
+    /* Align to the right */
+    font-size: 28px;
+    /* Font size for close button */
     font-weight: bold;
-    margin-top: 20px;
+    /* Make it bold */
+    cursor: pointer;
+    /* Change cursor to pointer */
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    /* Change color on hover/focus */
+    text-decoration: none;
+    /* Remove underline on hover/focus */
 }
 
 
+/* Animation to appear smoothly */
+
+@keyframes animateModal {
+    from {
+        opacity: 0;
+        /* Start invisible */
+        transform: translateY(-50px);
+        /* Move up */
+    }
+}
+
+
+/* Title and Message Styling */
+
+#modalTitle {
+    font-size: 40px;
+    /* Title font size */
+    color: #000;
+    font-family: 'Bebas Neue', sans-serif;
+    /* Font family */
+    text-align: center;
+    /* Center the title */
+    margin-bottom: 10px;
+    /* Space below the title */
+}
+
+#modalMessage {
+    font-size: 20px;
+    /* Message font size */
+    font-family: 'Figtree', sans-serif;
+    /* Font family */
+    text-align: center;
+    /* Center the message */
+    line-height: 1.5;
+    /* Space between lines */
+}

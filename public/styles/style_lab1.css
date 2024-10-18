@@ -1,0 +1,192 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow-y: auto;
+    /* Allow vertical scrolling */
+    overflow-x: hidden;
+    /* Hide horizontal scrolling */
+    background: linear-gradient(135deg, #545353, #696969);
+    color: #ffffff;
+}
+
+header {
+    background-color: #ff6347;
+    color: #ffffff;
+    font-family: "Figtree", sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100vw;
+    box-sizing: border-box;
+    margin-top: -10px;
+    margin-left: -8px;
+}
+
+a:hover .text {
+    color: black;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    margin-left: 100%;
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    gap: 45px;
+    margin-left: 75%;
+}
+
+nav ul li {
+    margin: 0;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container .logo {
+    width: 150px;
+    margin-bottom: 5px;
+    margin-top: -70px;
+    color: #222;
+}
+
+h1 {
+    font-size: 4em;
+    color: hsl(0, 0%, 98%);
+    margin-bottom: -15px;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #f5e7e1;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #fa6732;
+    /* Bright button color */
+    color: #ffffff;
+    /* White text */
+    border: none;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff2600;
+    /* Slightly different shade on hover */
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #222;
+    color: #ccc;
+}
+
+.welcome-section {
+    padding: 20px;
+}
+
+
+/* From Uiverse.io by Spacious74 */
+
+.outer {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    padding: 1px;
+    background: radial-gradient(circle 230px at 0% 0%, #ffffff, #0c0d0d);
+    position: relative;
+    margin: 15px;
+    /* Adjust this value for desired spacing */
+}
+
+.dot {
+    width: 5px;
+    aspect-ratio: 1;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px #ffffff;
+    border-radius: 100px;
+    z-index: 2;
+    right: 10%;
+    top: 10%;
+    animation: moveDot 6s linear infinite;
+}
+
+.custom-button {
+    display: inline-block;
+    /* Allows for margin and padding */
+    background-color: #fa6732;
+    /* Button background color */
+    color: #ffffff;
+    /* Text color */
+    text-decoration: none;
+    /* Remove underline */
+    padding: 10px 20px;
+    /* Padding for top/bottom and left/right */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth transition for hover effects */
+}
+
+.custom-button:hover {
+    background-color: #ff2600;
+    /* Change background color on hover */
+    transform: scale(1.05);
+    /* Scale effect on hover */
+}
+
+.custom-button:active {
+    background-color: #222;
+    /* Darker color when button is active */
+    color: #ccc;
+    /* Change text color on active */
+}
+
+.step-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Light transparent background */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding inside the container */
+    margin: 15px 0;
+    /* Space between steps */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+}
